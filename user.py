@@ -6,7 +6,7 @@ class User:
         self.username = username
         self.role = role
 
-def authenticate_user(username, password, file_path='./PA3_credentials.csv'):
+def authenticate_user(username, password, file_path='./docs/PA3_credentials.csv'):
     try:
         df = pd.read_csv(file_path)
         match = df[(df['username'] == username) & (df['password'] == password)]

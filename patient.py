@@ -3,7 +3,7 @@ import pandas as pd
 import uuid
 
 class PatientManager:
-    def __init__(self, file_path='./PA3_data.csv'):
+    def __init__(self, file_path='./docs/PA3_data.csv'):
         self.file_path = file_path
         self.df = pd.read_csv(file_path)
 

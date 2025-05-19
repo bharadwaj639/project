@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 class StatsGenerator:
-    def __init__(self, data_file='./PA3_data.csv'):
+    def __init__(self, data_file='./docs/PA3_data.csv'):
         self.df = pd.read_csv(data_file)
         self.df['Visit_time'] = pd.to_datetime(self.df['Visit_time'], format='mixed', dayfirst=False, errors='coerce')
 

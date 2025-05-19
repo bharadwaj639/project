@@ -2,7 +2,7 @@
 import pandas as pd
 
 class NoteManager:
-    def __init__(self, file_path='./PA3_Notes.csv'):
+    def __init__(self, file_path='./docs/PA3_Notes.csv'):
         self.file_path = file_path
         self.df = pd.read_csv(file_path)
 
